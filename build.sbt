@@ -1,4 +1,12 @@
 ThisBuild / tlBaseVersion := "2.13"
+ThisBuild / version := "2.13.0-WASM-1"
+ThisBuild / isSnapshot := false
+ThisBuild / organization := "io.github.florian3k.cats"
+ThisBuild / homepage := Some(url("https://github.com/Florian3k/wasm-cats"))
+ThisBuild / scmInfo := Some(ScmInfo(
+  url("https://github.com/Florian3k/wasm-cats"),
+  "scm:git:https://github.com/Florian3k/wasm-cats.git"
+))
 
 val scalaCheckVersion = "1.19.0"
 
@@ -307,6 +315,7 @@ lazy val docs = project
 ThisBuild / licenses := List(License.MIT)
 ThisBuild / startYear := Some(2015)
 ThisBuild / developers ++= List(
+  tlGitHubDev("Florian3k", "Florian3k"),
   tlGitHubDev("ceedubs", "Cody Allen"),
   tlGitHubDev("rossabaker", "Ross Baker"),
   tlGitHubDev("armanbilge", "Arman Bilge"),
